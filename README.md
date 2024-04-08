@@ -96,7 +96,17 @@ UNION ALL</br>
 SELECT COUNT(*) AS Qtd, 'Vendas' AS Tabela FROM vendas;</br>
 
 &nbsp;
-
+</br>
 <img class="aligncenter size-full wp-image-22855" src="https://www.makerzine.com.br/wp-content/uploads/2024/04/query5.png" alt="" width="487" height="325" />
+
+&nbsp;</br></br>
+-- consulta dos anos das vendas --
+
+SELECT strftime("%Y", data_venda) AS Anos_de_Venda FROM vendas
+GROUP BY Anos_de_Venda;
+
+&nbsp;
+
+<img class="aligncenter size-full wp-image-22856" src="https://www.makerzine.com.br/wp-content/uploads/2024/04/query6.png" alt="" width="188" height="204" />
 
 &nbsp;
