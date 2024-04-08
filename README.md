@@ -110,3 +110,14 @@ GROUP BY Anos_de_Venda;
 <img class="aligncenter size-full wp-image-22856" src="https://www.makerzine.com.br/wp-content/uploads/2024/04/query6.png" alt="" width="188" height="204" />
 
 &nbsp;
+&nbsp;
+-- criando uma contagem para o total de vendas para cada ano --</br>
+SELECT strftime("%Y", data_venda) AS Anos_de_Venda, COUNT(id_venda) AS Total_Vendas</br>
+FROM vendas</br>
+GROUP BY Anos_de_Venda</br>
+ORDER BY Anos_de_Venda;</br>
+
+<img class="aligncenter size-full wp-image-22857" src="https://www.makerzine.com.br/wp-content/uploads/2024/04/query7.png" alt="" width="327" height="200" />
+
+&nbsp;
+
